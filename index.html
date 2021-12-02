@@ -1,14 +1,147 @@
-<!DOCTYPE html>
-<html lang="'en">
-<head>
-    <meta charset="'UTF-8">
-    <title>My Fall Project 2021 Demo</title>
+<!--DEVELOPER: Aron Shrestha, IS117-003, Fall-2021, 2021 -->
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Project-Aron Shrestha</title>
+    <link rel="shortcut icon" href="./icons/Logo%2032_32%20px.png">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous">
+    <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
-<h1>This is the big demo!</h1>
-<p>Hello world!</p>
-<p>New line.</p>
-<p>Another line</p>
+<div class="content">
+<header>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Aron Shrestha</a>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+</header>
+<div class="container-fluid">
+    <div class="row">
+        <nav class="navbar navbar-expand-md
+                    justify-content-start
+                    bg-light navbar-light col-12">
+            <!-- Brand -->
+<!--            <a class="navbar-brand" href="#">Logo</a>-->
+            <!-- Responsive Button for the smaller menu -->
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-evenly" id="collapsibleNavbar">
+
+                <ul class="navbar-nav">
+                    <!-- Links -->
+                    <li class="nav-item current">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/contact.html">Contact Me</a>
+                    </li>
+
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop"
+                           data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Portfolio
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="./pages/resume.html">Resume</a>
+                            <a class="dropdown-item" href="./pages/cproj.html">C++ Projects</a>
+                            <a class="dropdown-item" href="./pages/javaproj.html">Java Projects</a>
+                            <a class="dropdown-item" href="./pages/pythonproj.html">Python Projects</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/aboutme.html">About Me</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <main>
+        <div class="container-lg bg-dark text-light p5 border-top border-primary border-5 mt-3">
+            <div class="container-lg bg-dark p-5">
+                <h1 class="display-5 text-center">Welcome to my Website</h1>
+                <hr>
+                <div class="row">
+                    <p class="col-md-7 col-lg-9">Welcome to my personal website. I am Aron Shrestha, a junior undergrad at New Jersey Institute of Technology. I am a computer science
+                        major with a minor in Mobile and Web. This website was made to showcase all my personal projects that I have created during my studies.</p>
+                    <img src="./images/mypic.jpg" class="col-md-5 col-lg-3 img-fluid rounded-circle float-end mx-auto" style="max-width: 350px;" alt="My picture">
+                </div>
+            </div>
+        </div>
+        <center><hr class="col-10"></center>
+        <div class="container-lg bg-primary p-4">
+            <h2 class="display-6 p-3">Featured Projects</h2>
+            <div class="row pt-3 mx-3 text-center">
+                <div class="col-md-4">
+                <div class="card border border-primary border-2 pb-2 mb-3">
+                    <div class="card-body">
+                        <h3 class="card-title">Compiler in C++</h3>
+                        <hr>
+                        <p class="card-text">
+                            - Created a lexical analyser,a parser, and an interpreter for a simple programming language using C++.
+                        </p>
+                        <a href="https://github.com/aron-s/Lexical-Analyser" class="btn btn-primary mt-3" target="_blank">View Project</a>
+                    </div>
+                </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border border-primary border-2 pb-2 mb-3">
+                        <div class="card-body">
+                            <h3 class="card-title">Voice Assistant in Python</h3>
+                            <hr>
+                            <p class="card-text">
+                                - Created a voice assistant in python using modules such as speech_recognition, gTTS,and wolframalpha.
+                            </p>
+                            <a href="https://github.com/aron-s/Virtual-assistant" class="btn btn-primary mt-3" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border border-primary border-2 pb-2 mb-3">
+                        <div class="card-body">
+                            <h3 class="card-title">Nine Puzzle solver in Java</h3>
+                            <hr>
+                            <p class="card-text">
+                                - Created a program that solves NinePuzzle with miniumum steps using Breadth First Search algorithm.
+                            </p>
+                            <a href="https://github.com/aron-s/NinePuzzle" class="btn btn-primary mt-3" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+</div>
+
+<footer class="footer page-footer font-small mt-3">
+    <div class="container">
+        <div class="row">
+            <span class="text-muted">&copy; Aron Shrestha, 2021 |  <a href="#">Terms Of Use</a>  |  <a href="#">Privacy Statement</a></span>
+        </div>
+    </div>
+</footer>
+
+<!-- Javascript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous">
+</script>
+
 </body>
 </html>

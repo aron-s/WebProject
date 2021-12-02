@@ -1,0 +1,83 @@
+/*DEVELOPER: Aron Shrestha, IS117-003, Fall-2021, 2021 */
+
+
+.footer {
+    left: 0;
+    bottom: 0;
+    position: relative;
+    width: 100%;
+    /*margin-top: auto;*/
+    flex-shrink: 0;
+    background-color: aliceblue;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.75rem;
+    flex-shrink: 0;
+}
+
+html, body {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+.content {
+    flex: 1 0 auto;
+}
+
+
+.current {
+    font-weight: bold;
+    background-color: #bae8e8;
+    border-radius: 15px 30px;
+    padding: 0 0.25rem;
+}
+
+@media only screen and (max-width: 768px){
+    .current {
+        font-weight: bold;
+        background-color: #bae8e8;
+        border-radius: 0.25rem;
+        margin-top: 0.5rem;
+    }
+}
+
+.border-primary {
+    border-color: #2c7da0 !important;
+}
+
+.bg-primary {
+    background-color: #ADB5BD !important;
+}
+
+#logo {
+    color:#28D1BA;
+}
+
+.list-group-item {
+    background-color: #F7F7F7 !important;
+}
+
+.active {
+    background-color: #28D1BA !important;
+    border-color: #28D1BA !important;
+    font-weight: bold;
+}
+
+.card:hover,.card-body:hover, .card-title:hover, .card-text:hover{
+    border-width: 2px;
+    border-color: #198754!important;
+    color: #198754!important;
+}
+
+a h5:hover{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+
+
+
